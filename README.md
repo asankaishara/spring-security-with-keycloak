@@ -14,6 +14,7 @@
             * Service Accounts Enabled = ON
             * Authorization Enabled = ON
             * Valid Redirect URIs = *
+            * Service Account Role -> Client Roles = add all the roles
         * create new client with following settings
             * name = demo-client
             * Access Type = confidential
@@ -32,4 +33,6 @@
 * Build the "app1" and deploy the war file found in target to any compatible server.
 * if you goto "http://localhost:8080/app1/" you can access public unprotected service
 * if you goto "http://localhost:8080/app1/admin" you will have to login to your account to access the protected resource
- 
+
+* To use keycloak admin rest API, first update the configuration of "realm-management" client as mentioned above
+* Just run the "Runner.java". it will create user in keycloak according to the given details.
